@@ -4,6 +4,10 @@ Rails.application.configure do
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
+# class Application < Rails::Application
+#     config.web_console.whitelisted_ips = '105.56.195.35'
+#   end
+  
   config.cache_classes = false
 
   # Do not eager load code on boot.
@@ -51,4 +55,5 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  # config.web_console.whitelisted_ips = '127.0.0.1'
 end

@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsWebApp</title>
+    <title>LearningRubyOnRails</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <nav class="website-nav">
+                <ul>
+                    <li><a class="home-link" href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="/students">List Student</a></li>
+                    <li><a href="/students/new">Add Student</a></li>
+                </ul>
+            </nav>
   </head>
 
-  <body>
+  <body style="background: gainsboro;">
     <%= yield %>
   </body>
 </html>
